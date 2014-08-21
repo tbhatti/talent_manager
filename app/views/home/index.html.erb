@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+    <%= render 'home/home_after_login' %>
+<% else %>
+    <%= render 'home/home_before_login' %>
+<% end %>
+
+

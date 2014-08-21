@@ -1,0 +1,19 @@
+
+<% if user_signed_in? %>
+      <div id="container-navigation">
+
+        <nav>
+          <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+          <%#= link_to "Users", users_path %>|
+         <%= link_to 'Edit Your Profile', edit_user_registration_path %>
+         <%= link_to 'Edit Address', edit_address_path(current_user.address.id) %>
+        </nav>
+    </div>
+<% else %>
+    <div id="container-navigation">
+     <nav>
+      <%= link_to "Sign In", new_user_session_path, :method => :get %>
+      <%= link_to "Sign up", new_user_registration_path, :method => :get %>
+    </nav>
+    </div>
+<% end %>

@@ -1,0 +1,20 @@
+<div id="container-user-resume-detail">
+  <%= hidden_field_tag :role, "#{@user.role}" %>
+  <div id="container-resume-comments" >
+    <div id="container-resume-heading" ><legend>Resume</legend></div>
+    <div id="container-resume" >
+      <%= render 'users/resume', :locals => {@user => @user} %>
+    </div>
+    <div id="container-comment-heading" ><legend>Comments</legend></div>
+    <div id="container-comments" >
+      <div id="container-comments-list" class="js-container-comments-list">
+        <%= render 'home/comments_list', :locals => {@comments => @comments} %>
+      </div>
+    </div>
+  </div>
+
+  <div id="container-candidates-list" >
+    <%= render 'users/users_list', :locals => {@users => @users} %>
+  </div>
+
+</div>

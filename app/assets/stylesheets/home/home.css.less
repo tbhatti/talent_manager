@@ -1,0 +1,244 @@
+
+body {
+
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color:#CCCCCC;
+  font-family:Geneva,Arial,Helvetica,sans-serif;
+  border:solid;
+  border-color:brown;
+
+  /*nav {
+    display:inline;
+    float:right;
+    bottom: 0px;
+    }
+  nav a:link, nav a:visited {
+    display: inline;
+    border-bottom: 3px solid #fff;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+  nav a:hover {
+    color: white;
+    background-color: #ccc;
+  }
+  nav h3 {
+    margin: 5px;
+    color: white;
+  }*/
+  #container-main{
+    border:1px solid #ffffff;
+    border-top-right-radius:2em;
+    border-top-left-radius:2em;
+    position: absolute;
+    top:20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: white;
+
+    #container-header{
+
+      background-color: white;
+      border-bottom:1px solid #000;
+      box-shadow: 0px 5px 15px #e9000b;
+      border-top-right-radius:2em;
+      border-top-left-radius:2em;
+      display:block;
+      color:#FFFFFF;
+      text-align:center;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+    /*  #container-welcome-user{
+        width: 200px;
+        position: fixed;
+        height: 50px;
+        background: yellow;
+        right: 220px;
+        color: black;
+      }*/
+      #container-navigation{
+        float: left;
+        width: 400px;
+        position: fixed;
+
+        top: 94px;
+        right: 25px;
+        height: 30px;
+        nav {
+          display:inline;
+          float:right;
+          line-height:38px;
+          position: absolute;
+          left: 0px;
+
+        }
+        nav a:link, nav a:visited {
+          display: inline;
+          border-right: 1px solid #e9000b;
+          padding-right: 10px;
+          text-decoration: none;
+          font-weight: bold;
+          margin: 5px;
+        }
+
+        nav a:hover {
+          color: black;
+          background-color: #eee;
+        }
+        nav h3 {
+          margin: 5px;
+          color: white;
+        }
+      }
+      #container-logo{
+        float: left;
+      }
+
+    }
+
+    #container-main-content{
+      width: 100%;
+      position: absolute;
+      top: 110px;
+      bottom: 70px;
+      #container-user-resume-detail{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        #container-resume-comments{
+
+          float: left;
+          width: 50%;
+          height: 100%;
+          border:1px solid Black;
+
+          &.hide {
+            display:none;
+            height: 0px;
+            width: 0px;
+          }
+          &.show {
+            display:block;
+            height: 100%;
+            width: 50%;
+          }
+          &.expanded {
+            width: 100%;
+            height: 100%;
+
+          }
+          &.collapsed {
+            width: 50%;
+            height: 100%;
+
+          }
+          #container-resume-heading{
+            width: 100%;
+            height: 5%;
+            background: #e9000b;
+
+            // border-bottom:thick solid #333;
+          }
+          #container-resume{
+
+            width: 100%;
+            height: 45%;
+            overflow-x: auto;
+            background:aquamarine;
+
+
+          }
+          #container-comment-heading{
+            width: 100%;
+            height: 5%;
+            background: #e9000b;
+          }
+          #container-comments{
+            width: 100%;
+            height: 45%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: #ccc;
+
+
+          }
+        }
+        #container-candidate-list-heading{
+          width: 100%;
+          height: 5%;
+          background: #e9000b;
+        }
+        #container-candidates-list{
+          overflow-x: hidden;
+          overflow-y: auto;
+          float: right;
+          width: 49%;
+          height: 100%;
+          background: #ccc;
+          border:1px solid Black;
+          &.hide {
+            visibility: none;
+            width: 0px;
+            height: 0px;
+          }
+          &.show {
+            display: block;
+            width: 50%;
+            height: 100%;
+
+          }
+          &.expanded {
+            float: left;
+            width: 100%;
+            height: 100%;
+
+          }
+          &.collapsed {
+
+            width: 50%;
+            height: 100%;
+
+          }
+
+          #container-filters{
+            height: 130px;
+            width: 100%;
+            background: red;
+          }
+
+        }
+
+      }
+    }
+
+    #container-footer{
+      position: absolute;
+      background: lightpink;
+      width: 100%;
+      height: 50px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+
+
+    }
+
+
+  }
+
+}
+

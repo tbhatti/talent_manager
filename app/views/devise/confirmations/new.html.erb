@@ -1,0 +1,49 @@
+<h2>Resend confirmation instructions</h2>
+
+<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.submit "Resend confirmation instructions" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+<div id="container-main-login">
+  <div id="container-header-login">
+    <div id="container-heading"><span id="span">Resend confirmation instructions</span></div>
+    <div id="container-login-controlls">
+      <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
+          <%= devise_error_messages! %>
+          <div class="row">
+            <div class="span4">
+              <div class="well" style="height: 150px;">
+                <div class="pull-left" style="width: auto; margin-right: 20px;">
+                  <div class="control-group">
+                    <label class="control-label">Email</label>
+                    <div class="controls">
+                      <%= f.email_field :email, :autofocus => true %>
+                    </div>
+                  </div>
+
+
+                  <div class="control-group">
+                    <div><%= f.submit "Resend" ,:class=>"btn btn-danger" %></div>
+                  </div>
+
+                  <div class="control-group">
+                    <%= render "devise/shared/links" %>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+      <% end %>
+    </div>
+  </div></div></div>
+

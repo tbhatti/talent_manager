@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1077248321">
+    <data-source source="LOCAL" name="Rails talent_manager: test" uuid="d00a5393-9c07-4bc9-9dd0-470c8f5c86b0">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/talent_manager_testing</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails talent_manager: development" uuid="413ca9e9-3408-4a73-9488-b5dc1a22d386">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/talent_manager_development</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails talent_manager: production" uuid="29784a9e-c296-43de-839e-25e1ef81e0f3">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/talent_manager_development</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

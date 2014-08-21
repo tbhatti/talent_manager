@@ -1,0 +1,41 @@
+<%= form_for :address,:method=>"get",:remote =>true,:url=>url_for(:controller=>"home", :action=>"filter_users") do |f| %>
+
+<div class="row">
+  <div class="span12">
+    <div class="well" style="height: 90px;">
+       <div class="pull-left" style="width: auto; margin-right: 20px;">
+        <div class="control-group">
+
+
+          <div class="controls">
+            <%= f.select  :industry, ["Select Industry"] ,:class => "text", :placeholder => "Industry", :class => "control-label" %>
+          </div>
+        </div>
+        <div class="control-group">
+
+
+          <div class="controls">
+            <%= f.select :country, ["Select Country"],:class => "text", :placeholder => "Country", :class => "control-label" %>
+          </div>
+        </div>
+
+      </div>
+      <div class="pull-left" style="width: auto; margin-right: 20px;">
+        <div class="control-group">
+
+
+          <div class="controls">
+            <%= f.select :state, ["Select State"], :class => "text", :placeholder => "State", :class => "control-label" %>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <%= f.submit "Submit", :class => "btn btn-small btn-danger" %>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+<% end %>

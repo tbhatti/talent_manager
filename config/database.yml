@@ -1,0 +1,36 @@
+test:
+  encoding: utf8
+  adapter: mysql2
+  reconnect: false
+  database: talent_manager_testing
+  pool: 5
+  username: root
+  password: root
+  # JRuby doesn't support socket:
+  host: 127.0.0.1
+  #socket: /tmp/mysql.sock
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: talent_manager_development
+  pool: 5
+  username: root
+  password: root
+  # JRuby doesn't support socket:
+  host: 127.0.0.1
+  #socket: /tmp/mysql.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: talent_manager_development
+  pool: 5
+  username: root
+  password: root
+  # JRuby doesn't support socket:
+  host: 127.0.0.1
+  #socket: /tmp/mysql.sock
+
