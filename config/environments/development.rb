@@ -9,8 +9,8 @@ TalentManager::Application.configure do
   config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      user_name: "tbhatti007@gmail.com",
-      password: "Muhammad300460",
+      user_name: "ims.noreply.test@gmail.com",
+      password: "hello123!",
       authentication: "plain",
       enable_starttls_auto: true
   }

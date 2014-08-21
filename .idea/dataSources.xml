@@ -12,7 +12,7 @@
     <data-source source="LOCAL" name="Rails talent_manager: development" uuid="413ca9e9-3408-4a73-9488-b5dc1a22d386">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/talent_manager_development</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/TM_development</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
