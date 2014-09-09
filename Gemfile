@@ -6,7 +6,6 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'therubyracer'
 gem 'devise'
 gem "twitter-bootstrap-rails"
 gem 'carrierwave', '~> 0.9'
@@ -29,17 +28,10 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# For handling Error
+gem 'haml'
+gem 'capistrano', '~> 3.1.0' , :group => :production
+gem 'capistrano-rails', '~> 1.1.0' , :group => :production
+gem 'capistrano-bundler' , :group => :production
+gem 'capistrano-rbenv', "~> 2.0", :group => :production
+gem 'unicorn', group: :production
